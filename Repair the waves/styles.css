@@ -1,3 +1,13 @@
 .Bigbar {
-    background-color:cyan;
+    background-color: #004bad7e;
+    padding: 1em;
+    margin: 0 auto;
+
+}
+.topbar_hyperlinks {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: white;
+    
 }
