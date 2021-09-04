@@ -1,13 +1,26 @@
-.Bigbar {
-    background-color: #004bad7e;
-    padding: 1em;
-    margin: 0 auto;
+.banner{
+    padding: 1vw;
+    padding-bottom: 60vh;
+    background-size:cover;
+    background-image:url("Images/tim-mossholder-qq-8dpdlBsY-unsplash.jpg")
+}
 
+.Bigbar {
+    background-color: #004bad65;
+    padding: 1vw;
+    text-align:center;
 }
 .topbar_hyperlinks {
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2em;
+    font-size: 4vw;
     color: white;
-    
+    padding: 1vw;
+}
+
+.contents {
+    padding: 1vw;
+    height: 50vh;
+    background-color: #004bad;
+    border-style:inset;
 }
