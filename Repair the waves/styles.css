@@ -10,6 +10,7 @@
     padding: 1vw;
     text-align:center;
 }
+
 .topbar_hyperlinks {
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -23,4 +24,14 @@
     height: 50vh;
     background-color: #004bad;
     border-style:inset;
+}
+
+.Header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    color: white;
+}
+
+.base { 
+    background-color: #004bad;
 }
