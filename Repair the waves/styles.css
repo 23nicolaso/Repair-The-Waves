@@ -1,37 +1,68 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
 .banner{
-    padding: 1vw;
-    padding-bottom: 60vh;
+    padding-bottom: 30rem;
     background-size:cover;
-    background-image:url("Images/tim-mossholder-qq-8dpdlBsY-unsplash.jpg")
+    background-image:url("Images/samuel-scrimshaw-fkS-me35j7I-unsplash.jpg")
 }
 
 .Bigbar {
-    background-color: #004bad65;
-    padding: 1vw;
-    text-align:center;
+    background-color: #5a5a5ab9;
+    padding: 0.75em;
+    text-align:right;
 }
 
 .topbar_hyperlinks {
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 4vw;
+    position:relative;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 0.9rem;
     color: white;
-    padding: 1vw;
+    padding:0.75em;
 }
+.topbar_hyperlinks:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 0.75em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+  
+.topbar_hyperlinks:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 
 .contents {
-    padding: 1vw;
-    height: 50vh;
-    background-color: #004bad;
+    padding: 1rem;
+    height: 50em;
+    background-color: #5a5a5a;
     border-style:inset;
 }
 
 .Header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 4vw;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 1rem;
     color: white;
 }
 
 .base { 
-    background-color: #004bad;
+    background-color: #5a5a5ab9;
 }
