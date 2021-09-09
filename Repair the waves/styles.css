@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
 html,body
 {
     width: 100%;
@@ -7,9 +9,7 @@ html,body
     overflow-x: hidden; 
 }
 
-
 .banner{
-    padding-bottom: 30rem;
     background-size:cover;
     background-image:url("Images/samuel-scrimshaw-fkS-me35j7I-unsplash.jpg")
 }
@@ -19,6 +19,17 @@ html,body
     padding: 0.75em;
     text-align:right;
 }
+
+.Title{
+  background-size:cover;
+  font-family: 'Cabin Condensed', sans-serif;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+svg{font-weight:bold}
+
 
 .topbar_hyperlinks {
     text-decoration: none;
