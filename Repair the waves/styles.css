@@ -14,29 +14,25 @@ html,body
     background-image:url("Images/samuel-scrimshaw-fkS-me35j7I-unsplash.jpg")
 }
 
+.Logo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:20em;
+}
+
 .Bigbar {
-    background-color: #5a5a5ab9;
+    background-color: #9D9D9Db9;
     padding: 0.75em;
     text-align:right;
 }
-
-.Title{
-  background-size:cover;
-  font-family: 'Cabin Condensed', sans-serif;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-}
-svg{font-weight:bold}
-
 
 .topbar_hyperlinks {
     text-decoration: none;
     position:relative;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    font-size: 0.9rem;
-    color: white;
+    font-size: 1rem;
+    color: #FEFBF3;
     padding:0.75em;
 }
 .topbar_hyperlinks:after {
@@ -63,17 +59,16 @@ svg{font-weight:bold}
 
 .contents {
     padding: 1rem;
-    height: 50em;
-    background-color: #5a5a5a;
-    border-style:inset;
+    height: 30em;
+    background-color: #79B4B7;
 }
 
 .Header {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 1rem;
-    color: white;
+    color: #FEFBF3;
 }
 
 .base { 
-    background-color: #5a5a5ab9;
+    background-color: #9D9D9Db9;
 }
