@@ -9,18 +9,19 @@ html,body
 .banner{
     background-size:cover;
     padding-bottom: 35em;
+    height:5em;
     background-image:url("Images/IMG_6953\ \(2\).JPG")
 }
 
 .banner2{
     background-size:cover;
-    padding-bottom: 35em;
+    padding-bottom: 20em;
     background-image: url("Images/frank-mckenna-OD9EOzfSOh0-unsplash.jpeg")
 }
 
 .banner3{
     background-size:cover;
-    padding-bottom: 60em;
+    padding-bottom:20em;
     background-image: url("Images/maryna-yazbeck-bT2XiJtcQ1M-unsplash.jpeg")
 }
 
@@ -28,6 +29,7 @@ html,body
 .Logo{
     display:block;
     max-width:10em;
+    float:right;
 }
 
 .Bigbar {
@@ -115,10 +117,9 @@ html,body
 
 .container {
     position: relative;
-    width:100%;
-    height:140vh;
-    overflow:hidden;
+    height:30em;
     background-color: #79B4B7;
+    overflow:hidden;
 }
 
 .container .slider { 
@@ -131,64 +132,17 @@ html,body
 
 .container .slider .slide {
     float:left;
+    height:50vh;
+    padding:1em;
 }
+
 
 @keyframes animate
 {
-    0%
-    {
+    0%{
         left:0;
     }
-    11%
-    {
-        left:0;
-    }
-    14%
-    {
-        left:-75%;
-    }
-    25%
-    {
-        left:-75%;
-    }
-    28%
-    {
-        left:-150%;
-    }
-    40%
-    {
-        left:-150%;
-    }
-    43%
-    {
-        left:-225%;
-    }
-    54%
-    {
-        left:-225%;
-    }
-    57%
-    {
-        left:-300%;
-    }
-    68%
-    {
-        left:-300%;
-    }
-    71%
-    {
-        left:-375%;
-    }
-    83%
-    {
-        left:-375%;
-    }
-    86%
-    {
-        left:-450%;
-    }
-    97%
-    {
-        left:-450%;
+    100%{
+        left:-100%;
     }
 }
