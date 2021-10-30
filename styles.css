@@ -171,3 +171,61 @@ html,body
         color:white;
     }
 }
+
+.carousel {
+    text-align: center;
+    overflow: hidden;
+    padding:1em;
+    width: 150vh;
+    display:block;
+    margin: 0 auto;
+}
+
+.carouselslides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+}
+.carouselslides::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
+.carouselslides::-webkit-scrollbar-thumb {
+    background: black;
+}
+.carouselslides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.carouselslides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@supports (scroll-snap-type) {
+    .carousel_slider > a {
+        display: none;
+    }
+}
+
+.carousel-slide-images{
+    height:75vh;
+}
+
+.footer{
+    height:20vh;
+    padding:1em;
+    background-color: black;
+}
