@@ -127,7 +127,7 @@ html,body
     top:0;
     left:0;
     width:700%;
-    animation: animate 40s linear infinite;
+    animation: animate 20s linear infinite;
 }
 
 .container .slider .slide {
@@ -142,7 +142,10 @@ html,body
     0%{
         left:0;
     }
+    50%{
+        left:-35%;
+    }
     100%{
-        left:-100%;
+        left:0;
     }
 }
