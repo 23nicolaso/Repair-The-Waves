@@ -24,6 +24,11 @@ html,body
     background-image: url("Images/maryna-yazbeck-bT2XiJtcQ1M-unsplash.jpeg")
 }
 
+.banner4{
+    background-size:cover;
+    padding-bottom: 60em;
+    background-image: url("Images/anastasia-taioglou-CTivHyiTbFw-unsplash.jpeg")
+}
 
 .Logo{
     display:block;
@@ -228,4 +233,10 @@ html,body
     height:20vh;
     padding:1em;
     background-color: black;
+}
+
+.product{
+    display:bottom:;;
+    width:30em;
+    float:left;
 }
