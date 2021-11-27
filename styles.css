@@ -24,10 +24,11 @@ html,body
     background-image: url("Images/maryna-yazbeck-bT2XiJtcQ1M-unsplash.jpeg");
 }
 
-.banner4{
+.banner{
     background-size:cover;
-    padding-bottom: 0px;
-    background-image: url("Images/anastasia-taioglou-CTivHyiTbFw-unsplash.jpeg")
+    padding-bottom: 25em;
+    height:5em;
+    background-image:url("Images/IMG_6953\ \(2\).JPG");
 }
 
 .Logo{
