@@ -24,7 +24,13 @@ html,body
     background-image: url("Images/maryna-yazbeck-bT2XiJtcQ1M-unsplash.jpeg");
 }
 
-.banner{
+.banner4{
+    background-size:cover;
+    padding-bottom: 0em;
+    background-image: url("Images/unsplash.oceanbeach_spikerock.jpg");
+}
+
+.banner5{
     background-size:cover;
     padding-bottom: 25em;
     height:5em;
