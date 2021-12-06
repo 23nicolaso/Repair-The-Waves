@@ -8,7 +8,7 @@ html,body
 
 .banner{
     background-size:cover;
-    padding-bottom: 45em;
+    padding-bottom: 44em;
     background-image:url("Images/tim-mossholder-qq-8dpdlBsY-unsplash.jpg");
 }
 
@@ -57,7 +57,6 @@ html,body
     text-align:right;
     border-style:groove;
     border-width:0.1em;
-    border-radius:2em;
     border-color:white;
 }
 
@@ -106,7 +105,7 @@ html,body
 .topbar_hyperlinks {
     text-decoration: none;
     position:relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
     font-size: 1.5rem;
     color: black;
     padding:0.75em;
@@ -183,8 +182,9 @@ html,body
 
 .container {
     position: relative;
-    height:30em;
-    background-color: white;
+    height:27em;
+    
+    background-image: url("Images/tim-mossholder-qq-8dpdlBsY-unsplash.jpg");
     overflow:hidden;
 }
 
