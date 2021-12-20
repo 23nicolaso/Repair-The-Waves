@@ -372,6 +372,21 @@ html,body
     border-color:gray;
     text-decoration: none;
     max-width:20%;
+    float:left;
+}
+.article_headline_2{
+    display:block;
+    background-color: white;
+    color:black;
+    font-family: 'garet',sans-serif;
+    font-size:1rem;
+    padding:1em;
+    border-style:solid;
+    border-width:0.1em;
+    border-color:gray;
+    text-decoration: none;
+    max-width:20%;
+    margin-left: 25%;
 }
 .article_picture{
     display:block;    
