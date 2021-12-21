@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 html,body
 {
     margin: 0px;
@@ -9,34 +9,27 @@ html,body
 .banner{
     background-size:cover;
     padding-bottom: 44em;
-    animation: image_change 120s linear infinite;
-    background-image:url("Images/tim-mossholder-qq-8dpdlBsY-unsplash.jpg");
+    animation: image_change 120s steps(1) infinite;
 }
 
 @keyframes image_change {
     0%{
-        background-image: url("Images/tim-mossholder-qq-8dpdlBsY-unsplash.jpg");
+        background-image: url("Images/home\ page/RTWMiasPhotos11.jpeg");
     }
-    24%{
-        background-image: url("Images/tim-mossholder-qq-8dpdlBsY-unsplash.jpg");
+    15%{
+        background-image: url("Images/home\ page/RTWMiasPhotos10.jpeg");
     }
-    25%{
-        background-image: url("Images/frank-mckenna-OD9EOzfSOh0-unsplash.jpeg");
+    30%{
+        background-image: url("Images/home\ page/RTWMiasPhotos9.jpeg");
     }
-    49%{
-        background-image: url("Images/frank-mckenna-OD9EOzfSOh0-unsplash.jpeg");
+    45%{
+        background-image: url("Images/home\ page/RTWMiasPhotos13.heic");
     }
-    50%{
-        background-image: url("Images/samuel-scrimshaw-fkS-me35j7I-unsplash.jpg");
-    }
-    74%{
-        background-image: url("Images/samuel-scrimshaw-fkS-me35j7I-unsplash.jpg");
+    60%{
+        background-image: url("Images/home\ page/RTWMiasPhotos7.heic");
     }
     75%{
-        background-image: url("Images/unsplash.oceanbeach_spikerock.jpg");
-    }
-    99%{
-        background-image: url("Images/unsplash.oceanbeach_spikerock.jpg");
+        background-image: url("Images/home\ page/3CEFDCB1-809D-4BEB-9B4E-525C7F6A25D4.jpeg");
     }
 }
 
@@ -105,16 +98,20 @@ html,body
 }
 
 .line{
-    width: 50%;
+    width: 100%;
     height: 0.1em;
     background-color: black;
     display: block;
     /* margin:0 auto; */
     border-radius:0.5em;
 }
+.full-width-picture{
+    width:100%;
+}
 
 .definition{
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:1000;
     font-size: 1.5rem;
     padding-top:0.5rem;
     padding-bottom: 1rem;
@@ -123,7 +120,8 @@ html,body
 }
 .definition_2{
     padding-top: 0.5rem;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:400;
     font-size: 1.5rem;
     color: white;
     text-align: justify;
@@ -133,10 +131,12 @@ html,body
 .topbar_hyperlinks {
     text-decoration: none;
     position:relative;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:100;
     font-size: 1.5rem;
     color: black;
     padding:0.75em;
+    text-transform:uppercase;
 }
 .topbar_hyperlinks:after {
     content: '';
@@ -161,7 +161,7 @@ html,body
     transform: scale(1);
   }
 
-.footer_hyperlinks {
+/* .footer_hyperlinks {
     text-decoration: none;
     vertical-align: middle;
     position:relative;
@@ -169,7 +169,7 @@ html,body
     color: gray;
     padding-right:5em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-}
+} */
 
 .contents {
     width:100%;
@@ -177,7 +177,11 @@ html,body
     background-color: white;
 }
 .padding {
-    padding: 4em;
+    padding-top:4em;
+    padding-right:16em;
+    padding-left:16em;
+    padding-bottom:4em;
+
 }
 .padding_2 {
     padding:4em;
@@ -188,7 +192,8 @@ html,body
 .more_info{
     background-color: white;
     color:black;
-    font-family: 'garet',sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
     font-size:1rem;
     padding:1em;
     border-style: none;
@@ -220,7 +225,7 @@ html,body
     top:0;
     left:0;
     width:700%;
-    animation: animate 20s linear infinite;
+    animation: animate 30s linear infinite;
 }
 .container .slider2 { 
     position: absolute;
@@ -350,7 +355,8 @@ html,body
     padding-left: 1em;
     color:gray;
     background-color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-family: 'Work Sans', sans-serif;
+    font-weight:400;
 }
 
 .product{
@@ -378,7 +384,8 @@ html,body
 
 .product_description{
 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-family: 'Work Sans', sans-serif;
+    font-weight:400;
     font-size: 1.5rem;
     
 }
