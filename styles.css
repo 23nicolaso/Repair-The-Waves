@@ -425,3 +425,7 @@ html,body
 .gap {
     padding-top:1em;
 }
+.gallery_cell{
+    width:100%;
+}
+

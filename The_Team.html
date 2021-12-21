@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>About The Waves</title>
         <link rel="stylesheet" href="styles.css">
-      
+        <link rel="stylesheet" href="flickity.css" media="screen">
     </head>
 <body>
   <div class="banner3">
@@ -29,16 +29,28 @@
     </div> 
     <div class="carousel">
   
-        <a href="#carousel-slide-1" id="topbar_hyperlinks">Jiya</a>
+        <!-- <a href="#carousel-slide-1" id="topbar_hyperlinks">Jiya</a>
         <a href="#carousel-slide-2" id="topbar_hyperlinks">Nicolas</a>
         <a href="#carousel-slide-3" id="topbar_hyperlinks">Lukas</a>
         <a href="#carousel-slide-4" id="topbar_hyperlinks">Mia</a>
         <a href="#carousel-slide-5" id="topbar_hyperlinks">Bhumi</a>
         <a href="#carousel-slide-6" id="topbar_hyperlinks">Sofia</a>
         <a href="#carousel-slide-7" id="topbar_hyperlinks">Nina</a>
-        <a href="#carousel-slide-8" id="topbar_hyperlinks">Rohan</a>
-      
-        <div class="carouselslides">
+        <a href="#carousel-slide-8" id="topbar_hyperlinks">Rohan</a> -->
+  
+        <!-- Flickity HTML init -->
+        <div class="main-gallery js-flickity"
+        data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+          <div class="gallery-cell"><img src="Images/aslider_jiya.png" class = "carousel-slide-images"></div>
+          <div class="gallery-cell"><img src="Images/aslider_nicolas.png" class = "carousel-slide-images"></div>
+          <div class="gallery-cell"><img src="Images/aslider_lukas.png" class = "carousel-slide-images"></div>
+          <div class="gallery-cell"><img src="Images/aslider_mia.png" class = "carousel-slide-images"></div>
+          <div class="gallery-cell"><img src="Images/aslider_bhumi.png" class = "carousel-slide-images"></div>
+          <div class="gallery-cell"><img src="Images/aslider_sofia.png" class = "carousel-slide-images"></div>
+          <div class="gallery-cell"><img src="Images/aslider_nina.png" class = "carousel-slide-images"></div>
+          <div class="gallery-cell"><img src="Images/aslider_rohan.png" class = "carousel-slide-images"></div>
+        </div>
+        <!-- <div class="carouselslides">
           <div id="carousel-slide-1">
             <img src="Images/aslider_jiya.png" class = "carousel-slide-images">
           </div>
@@ -63,7 +75,7 @@
           <div id="carousel-slide-8">
             <img src="Images/aslider_rohan.png" class = "carousel-slide-images">
           </div>
-        </div>
+        </div> -->
       </div>
 
     <div class="container">
@@ -93,5 +105,6 @@
       <div>@2021 Repair The Waves</div>
       <div>Site designed by Repair The Waves technology team</div>
     </div>
+    <script src="flickity.js"></script>
 </body>
 </html>
