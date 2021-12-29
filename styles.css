@@ -265,7 +265,7 @@ html,body
         left:0;
     }
     50%{
-        left:-15%;
+        left:-10%;
     }
     100%{
         left:0;
@@ -387,6 +387,7 @@ html,body
     font-family: 'Work Sans', sans-serif;
     font-weight:400;
     font-size: 1.5rem;
+    text-align: justify;
     
 }
 
