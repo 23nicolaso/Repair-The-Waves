@@ -9,28 +9,7 @@ html,body
 .banner{
     background-size:cover;
     padding-bottom: 44em;
-    animation: image_change 120s steps(1) infinite;
-}
-
-@keyframes image_change {
-    0%{
-        background-image: url("Images/home\ page/RTWMiasPhotos11.jpeg");
-    }
-    15%{
-        background-image: url("Images/home\ page/RTWMiasPhotos10.jpeg");
-    }
-    30%{
-        background-image: url("Images/home\ page/RTWMiasPhotos9.jpeg");
-    }
-    45%{
-        background-image: url("Images/home\ page/RTWMiasPhotos13.heic");
-    }
-    60%{
-        background-image: url("Images/home\ page/RTWMiasPhotos7.heic");
-    }
-    75%{
-        background-image: url("Images/home\ page/3CEFDCB1-809D-4BEB-9B4E-525C7F6A25D4.jpeg");
-    }
+    background-image: url("Images/home\ page/RTWMiasPhotos10.jpeg");
 }
 
 .banner2{
