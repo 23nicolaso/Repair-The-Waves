@@ -413,3 +413,8 @@ html,body
 .Comment-box input{
 	margin-right: 15px;
 }
+.Comment-box input2{
+	padding: 10px 30px;
+	font-size: 18px;
+	border-radius: 5px;
+}
