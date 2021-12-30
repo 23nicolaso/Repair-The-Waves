@@ -408,4 +408,6 @@ html,body
 .gallery_cell{
     width:100%;
 }
-
+.Comment-box input{
+	margin-right: 15px;
+}
