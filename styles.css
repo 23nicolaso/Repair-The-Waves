@@ -346,19 +346,20 @@ html,body
 
 .product_img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    left: 10px;
     width: 600px;
     height: 600px; 
 }
 
 .process_img{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-    width: 800px;
-    height: 100;
-    float: padding-bottom;
+    
+    width: 700px;
+    height: 87.5;
+    position: absolute;
+    top: 800px;
+    right: 50px;
 }
 
 .product_description{
@@ -366,8 +367,9 @@ html,body
     font-family: 'Work Sans', sans-serif;
     font-weight:400;
     font-size: 1.5rem;
-    text-align: justify;
-    
+    position: absolute;
+    top: 600px;
+    right: 50px;
 }
 
 .article_headline{
