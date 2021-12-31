@@ -36,17 +36,20 @@
             <div class="Comment-box">
                 <h2>Leave us a Comment</h2>
                 <form action="#">
-                    <input type="text" name="full_name" placeholder="Full Name..." />
+                    <input type="text" name="full_name" id="name" placeholder="Full Name..." />
                     <div class="Comment-box input">
-                        <input type="email" name="email" placeholder="Email Address..." />
+                        <input type="email" name="email" id="email" placeholder="Email Address..." />
                     </div>
-                    <textarea name="comment" id="" cols="40" rows="4" placeholder="Type your comment..."></textarea>
+                    <textarea name="comment" id="text" cols="40" rows="4" placeholder="Type your comment..."></textarea>
                     <div class="Comment-box input2">
-                        <button type="submit">Submit Comment</button>
+                        <button type="submit" id="submit">Submit Comment</button>
+                        <button type="delete" id="delete">Delete</button>
                     </div>
                 </form>
             </div>
-        </div>
+            <div class="Container">
+		        <div class="box"></div>
+            </div>
     </div>
 
     <div class="footer">
