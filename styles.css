@@ -36,6 +36,8 @@ html,body
     background-image:url("Images/IMG_6953\ \(2\).JPG");
 }
 
+
+
 .Logo{
     display:inline;
     width:3.4em;
@@ -50,6 +52,16 @@ html,body
     text-align: center;
     animation: fontflicker 5s linear infinite;
 }
+
+.title_products {
+    font-family: 'Garet', sans-serif;
+    font-size: 7.5em;
+    color:white;
+    padding:50px;
+    text-align: center;
+    animation: fontflicker 5s linear infinite;
+}
+
 
 .Bigbar {
     background-color: white;
@@ -343,6 +355,14 @@ html,body
     object-position: bottom: 
 }
 
+.order__button{
+    position: relative;
+    left: 1000px;
+    bottom: 300px;
+    outline: none;
+    height: 50px;
+    
+}
 
 .product_img{
     display: block;
@@ -358,7 +378,7 @@ html,body
     width: 700px;
     height: 87.5;
     position: absolute;
-    top: 800px;
+    top: 700px;
     right: 50px;
 }
 
@@ -368,7 +388,7 @@ html,body
     font-weight:400;
     font-size: 1.5rem;
     position: absolute;
-    top: 600px;
+    top: 470px;
     right: 50px;
 }
 .article_text{
