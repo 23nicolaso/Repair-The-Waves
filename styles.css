@@ -357,7 +357,7 @@ html,body
 
 .order__button{
     position: relative;
-    left: 1000px;
+    left: 75em;
     bottom: 300px;
     outline: none;
     height: 50px;
@@ -367,19 +367,19 @@ html,body
 .product_img{
     display: block;
     position: relative;
-    left: 10px;
-    width: 600px;
-    height: 600px; 
+    left: 1em;
+    width: 40em;
+    height: 40em; 
 }
 
 .process_img{
     display: block;
     
-    width: 700px;
+    width: 42em;
     height: 87.5;
     position: absolute;
-    top: 700px;
-    right: 50px;
+    top: 45em;
+    right: 5em;
 }
 
 .product_description{
