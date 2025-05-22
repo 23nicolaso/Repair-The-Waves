@@ -1,0 +1,725 @@
+/* Import Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+
+/* --- Global Resets & Base Styles --- */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px; /* Base font size */
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-color: #fff; /* Default background */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6,
+.title, .title_products, .subtitle, .subtitle_2 {
+    font-family: 'Cabin Condensed', 'Garet', sans-serif; /* Garet as fallback if Cabin Condensed fails or if you have it locally */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+}
+
+.title, .title_products {
+    font-size: clamp(3.5em, 8vw, 7.5em); /* Responsive font size */
+    color: white;
+    padding: 0.5em; /* Adjusted padding */
+    text-align: center;
+    animation: fontflicker 5s linear infinite;
+}
+
+.subtitle {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 300; /* Lighter weight for subtitles */
+    color: black;
+    padding-bottom: 0.5rem; /* Reduced padding */
+    text-align: left;
+}
+
+.subtitle_2 { /* For dark backgrounds */
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 300;
+    color: white;
+    text-align: left;
+}
+
+.definition, .product_description, .article_text {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    color: black;
+    text-align: justify;
+}
+
+.definition_2 { /* For dark backgrounds */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: white;
+    text-align: justify;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+
+/* --- Animations --- */
+@keyframes fontflicker {
+    0%, 80%, 100% { color: white; }
+    90% { color: teal; }
+}
+
+/* --- Banners & Headers --- */
+.site-global-header {
+    position: relative; /* For absolute positioning of children if needed */
+    background-size: cover;
+    background-position: center center;
+    color: white; /* Default text color for headers */
+}
+
+.banner { /* index.html main hero */
+    background-image: url("Images/RTWMiasPhotos10\ \(1\).JPEG");
+    min-height: 80vh; /* Ensure banner is tall enough */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes padding_2 to bottom */
+    padding-bottom: 0; /* Managed by padding_2 */
+}
+.site-global-header.banner { /* Special case for index.html nav */
+    background: transparent; /* Nav on top of full bg image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.1); /* Slight bg for nav visibility */
+}
+
+
+.banner2 { /* ourmission.html */
+    background-image: url("Images/frank-mckenna-OD9EOzfSOh0-unsplash.jpeg");
+    padding-bottom: 10em; /* Adjust as needed */
+}
+
+.banner3 { /* Default for most other pages */
+    background-image: url("Images/maryna-yazbeck-bT2XiJtcQ1M-unsplash.jpeg");
+    padding-bottom: 2em; /* Give some space below nav if title is not present */
+}
+.banner3 .title, .banner3 .title_products {
+    padding-top: 1em; /* Ensure title has space from nav */
+}
+
+
+.banner4 {
+    background-image: url("Images/unsplash.oceanbeach_spikerock.jpg");
+}
+
+.banner5 {
+    background-image:url("Images/IMG_6953\ \(2\).JPG");
+    height: auto; /* Let content define height */
+    min-height: 20em;
+}
+
+.Logo {
+    width: clamp(3em, 6vw, 4em); /* Responsive logo */
+    height: auto;
+    float: left; /* Kept for simple layout with Bigbar */
+    margin: 0.5em 1em;
+}
+
+.Bigbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent for better blend */
+    padding: 0.75em;
+    text-align: right;
+    border-bottom: 1px solid #eee; /* Softer border */
+    overflow: hidden; /* To contain floated Logo */
+    margin-left: 6em; /* Space for logo */
+}
+.site-global-header.banner .Bigbar { /* For index.html where header is absolute */
+     background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.topbar_hyperlinks {
+    text-decoration: none;
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: clamp(0.9rem, 2vw, 1.2rem); /* Responsive */
+    color: black;
+    padding: 0.75em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.topbar_hyperlinks:hover {
+    color: teal;
+}
+
+.topbar_hyperlinks::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.25em; /* Adjusted position */
+    display: inline-block;
+    height: 2px; /* Thinner line */
+    width: 100%;
+    background-color: teal; /* Use background for solid line */
+    opacity: 0;
+    transform: scaleX(0); /* Animate width */
+    transition: opacity 0.35s, transform 0.35s;
+    transform-origin: center;
+}
+
+.topbar_hyperlinks:hover::after {
+    opacity: 1;
+    transform: scaleX(0.8); /* Don't make it full width for subtlety */
+}
+
+/* --- Page Structure & Content Areas --- */
+.page-content, .contents, .missioncontent {
+    width: 100%;
+    background-color: white; /* Default for .contents */
+}
+.missioncontent { /* Specific for ourmission.html */
+    background-color: #333; /* Darker background */
+    color: white;
+}
+.missioncontent .subtitle, .missioncontent .definition {
+    color: white;
+}
+.missioncontent .line {
+    background-color: white;
+}
+
+
+.padding {
+    padding: clamp(2em, 5vw, 4em) clamp(1em, 10vw, 16em); /* Responsive padding */
+}
+
+.padding_2 { /* For index.html hero content */
+    padding: clamp(2em, 5vw, 4em);
+    width: clamp(80%, 50vw, 40%); /* Responsive width */
+    /* Removed absolute positioning - handled by flex in .banner */
+    margin-top: auto; /* Pushes to bottom if banner uses flex */
+}
+
+.line {
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    display: block;
+    border-radius: 0.5em;
+    margin: 1em 0; /* Added margin for spacing */
+}
+
+.full-width-picture {
+    width: 100%;
+    height: auto;
+    margin: 1em 0; /* Add some spacing */
+}
+
+.gap {
+    padding-top: 1em; /* Simple way to add vertical space */
+}
+
+/* --- Buttons --- */
+.more_info, .order__button button, .Comment-box button {
+    background-color: white;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    padding: 0.8em 1.5em;
+    border: 1px solid black; /* Added border for definition */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.more_info:hover, .order__button button:hover, .Comment-box button:hover {
+    background-color: teal;
+    color: white;
+    border-color: teal;
+}
+.order__button { /* This is the div containing the button on product page */
+    margin-top: 1em;
+}
+
+
+/* --- Footer --- */
+.site-footer {
+    background-color: black;
+    padding: 1em 0;
+    text-align: center; /* Center logos */
+    width: 100%;
+}
+
+.logo { /* Social media logos in footer */
+    width: clamp(3em, 6vw, 4em);
+    height: clamp(3em, 6vw, 4em);
+    padding: 0.5em;
+    vertical-align: middle;
+    display: inline-block; /* For centering */
+    margin: 0 0.5em;
+}
+
+.credits {
+    padding: 1em;
+    color: gray;
+    background-color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    text-align: center; /* Center credits text */
+    font-size: 0.9rem;
+}
+.credits div {
+    margin-bottom: 0.3em;
+}
+
+/* --- Specific Page Styles --- */
+
+/* Products Page */
+.product-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: clamp(1em, 5vw, 2em) clamp(1em, 10vw, 8em); /* Responsive padding */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.product-image-container,
+.product-details-container,
+.product-info-image-container {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content within these containers */
+}
+.product-image-container img, .product-info-image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+    padding: 0.5em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product_description {
+    text-align: center; /* Center product description text */
+    margin-bottom: 1em;
+}
+
+
+/* Articles Listing Page (articles.html) */
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+a.article_headline {
+    background-color: white;
+    color: black;
+    font-family: 'Cabin Condensed', 'Garet', sans-serif;
+    font-size: 1.1rem; /* Slightly larger headline text */
+    padding: 1em;
+    border: 1px solid #ddd; /* Softer border */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+    overflow: hidden; /* Ensure content fits */
+}
+a.article_headline:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.article_picture {
+    width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure image covers the area */
+    margin-bottom: 0.5em;
+}
+.article_headline .line {
+    margin: 0.5em 0; /* Spacing for line in headline */
+}
+
+/* Individual Article Pages */
+article.padding .definition:first-of-type { /* Author/Date */
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 1.5em;
+}
+article.padding section h2.definition, article.padding section h3.definition { /* Subheadings in articles */
+    font-weight: 700; /* Bolder subheadings */
+    color: #333;
+    margin-top: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+}
+.citations-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+.citations-list li {
+    margin-bottom: 0.5em;
+}
+
+/* --- Sliders (CSS Animated - index.html, The_Team.html) --- */
+/* Styles for .container, .slider, .slider2, .slide are kept for CSS animations */
+/* Consider replacing these with Flickity for better control and UX */
+.container {
+    position: relative;
+    width: 100%; /* Make container full width */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 2em auto; /* Centering and spacing */
+    height: auto; /* Adjust height based on content */
+    min-height: 27em; /* Original min-height */
+    overflow: hidden;
+}
+
+.container .slider, .container .slider2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700%; /* For 7 slides */
+    height: 100%;
+    display: flex; /* Use flex for slides */
+    animation-duration: 30s; /* Default, override for slider2 */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.container .slider { animation-name: animate; }
+.container .slider2 { animation-name: animate2; animation-duration: 20s; }
+
+
+.container .slider .slide, .container .slider2 .slide {
+    width: calc(100% / 7); /* Divide width equally among slides */
+    height: 100%;
+    padding: 1em;
+    object-fit: contain; /* Ensure image is visible, or use cover */
+}
+
+@keyframes animate {
+    0% { transform: translateX(0); }
+    /* Adjust percentages for smoother transitions if needed */
+    14.28% { transform: translateX(0); } /* Hold first slide */
+    16.28% { transform: translateX(-100%); } /* Transition to second */
+    30.56% { transform: translateX(-100%); } /* Hold second */
+    32.56% { transform: translateX(-200%); }
+    /* ... continue for all 7 slides (100/7 = ~14.28% per slide view time + transition) */
+    /* This animation needs careful calculation for smooth looping with multiple slides */
+    /* Simplified for now, full keyframes would be long */
+    50% { transform: translateX(-600%); } /* Showing last slide */
+    100% { transform: translateX(0); } /* Loop back - might jump */
+}
+/* A simpler approach for looping N slides in CSS animation is harder */
+/* Flickity is better for this kind of slider */
+
+@keyframes animate2 { /* For plastic_facts slider */
+    0% { left: 0; }
+    10% { left: 0; } /* Hold */
+    15% { left: -100%; } /* slide 1 to 2 */
+    25% { left: -100%; } /* Hold */
+    30% { left: -200%; } /* slide 2 to 3 */
+    /* ... continue for all 7 slides */
+    /* This animation is complex to get smooth with many slides */
+    /* Example for fewer slides to show structure */
+    90% { left: -600%; }
+    100% { left: 0%; }
+}
+
+/* Flickity Carousel (The_Team.html) */
+.carousel {
+    /* Flickity handles most of its own styling via flickity.css */
+    /* This container can be used for margin/padding around Flickity */
+    margin: 2em auto;
+    max-width: 90%; /* Control max width */
+}
+.gallery-cell {
+    width: 60%; /* Example: show more than one cell if desired */
+    margin-right: 10px;
+    height: 400px; /* Or use aspect ratio */
+    overflow: hidden;
+}
+.carousel-slide-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* --- Contact Form (Contacts_Updated_version.html) --- */
+.Comment-box {
+    margin-top: 2em;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.Comment-box h2 {
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+}
+.Comment-box form div {
+    margin-bottom: 1em;
+}
+.Comment-box input[type="text"],
+.Comment-box input[type="email"],
+.Comment-box textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+.Comment-box textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.Comment-box .form-actions {
+    display: flex;
+    gap: 1em;
+}
+.Comment-box button {
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+}
+
+.Container { /* Submitted comments display box */
+    margin-top: 2em;
+	height: auto; /* Let content define height */
+    min-height: 150px; /* Minimum height */
+	width: 100%; /* Take full width of padding container */
+	background: #f0f0f0; /* Lighter than #444 */
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	border-radius: 5px;
+    padding: 1em;
+}
+.Container .box {
+	height: 100%;
+	width: 100%;
+	border-radius: 2px;
+    background: #f8f8f8; /* Almost white */
+	overflow-y: auto;
+	text-align: left;
+    color: #333;
+    padding: 1em;
+}
+.Container .box p {
+    margin: 0;
+}
+
+/* --- Utility classes --- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* --- Media Queries (Basic Example for small screens) --- */
+@media (max-width: 768px) {
+    .Logo {
+        float: none;
+        display: block;
+        margin: 0.5em auto; /* Center logo */
+        text-align: center;
+    }
+    .Bigbar {
+        margin-left: 0;
+        text-align: center; /* Center nav links */
+    }
+    .topbar_hyperlinks {
+        display: block; /* Stack nav links */
+        padding: 0.5em;
+        border-bottom: 1px solid #eee;
+    }
+    .topbar_hyperlinks:last-child {
+        border-bottom: none;
+    }
+    .topbar_hyperlinks::after {
+        display: none; /* Hide underline on mobile for stacked links */
+    }
+
+    .padding {
+        padding: clamp(1.5em, 4vw, 2em) clamp(1em, 5vw, 2em);
+    }
+    .padding_2 {
+        width: clamp(90%, 70vw, 60%);
+    }
+
+    .product-main-content {
+        flex-direction: column; /* Stack product sections */
+        align-items: center;
+    }
+    .product-image-container,
+    .product-details-container,
+    .product-info-image-container {
+        width: 90%; /* Allow them to take more width */
+        margin-bottom: 1.5em;
+    }
+
+    .title, .title_products {
+        font-size: clamp(2.5em, 7vw, 5em);
+    }
+    .subtitle, .subtitle_2 {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+    }
+    .definition, .product_description, .article_text, .definition_2 {
+        font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+    }
+}
+
+/* --- Sliders (CSS Animated - index.html, The_Team.html) --- */
+/* Styles for .container, .slider, .slider2, .slide are kept for CSS animations */
+/* Consider replacing these with Flickity for better control and UX */
+.container.team-details-slider-container { /* Added a more specific class for the team page CSS slider */
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2em auto;
+    height: auto;
+    min-height: 27em;
+    overflow: hidden; /* This is important for CSS sliders */
+}
+
+/* Keep original animation but ensure slides are sized for flex display */
+.container.team-details-slider-container .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900%; /* 9 slides */
+    height: 100%;
+    display: flex; /* Use flex for slides */
+    animation: animate-team-slider 45s linear infinite; /* Longer duration for 9 slides */
+}
+
+.container.team-details-slider-container .slider .slide {
+    width: calc(100% / 9); /* Divide width equally among 9 slides */
+    height: 100%;
+    padding: 1em;
+    object-fit: contain; /* Or cover, depending on desired look */
+}
+
+/* Updated keyframes for the 9-slide team CSS slider */
+@keyframes animate-team-slider {
+    0% { transform: translateX(0%); }
+    10% { transform: translateX(0%); } /* Hold slide 1 */
+    11.11% { transform: translateX(-100%); } /* To slide 2 */
+    21.11% { transform: translateX(-100%); } /* Hold slide 2 */
+    22.22% { transform: translateX(-200%); } /* To slide 3 */
+    32.22% { transform: translateX(-200%); } /* Hold slide 3 */
+    33.33% { transform: translateX(-300%); } /* To slide 4 */
+    43.33% { transform: translateX(-300%); } /* Hold slide 4 */
+    44.44% { transform: translateX(-400%); } /* To slide 5 */
+    54.44% { transform: translateX(-400%); } /* Hold slide 5 */
+    55.55% { transform: translateX(-500%); } /* To slide 6 */
+    65.55% { transform: translateX(-500%); } /* Hold slide 6 */
+    66.66% { transform: translateX(-600%); } /* To slide 7 */
+    76.66% { transform: translateX(-600%); } /* Hold slide 7 */
+    77.77% { transform: translateX(-700%); } /* To slide 8 */
+    87.77% { transform: translateX(-700%); } /* Hold slide 8 */
+    88.88% { transform: translateX(-800%); } /* To slide 9 */
+    98.88% { transform: translateX(-800%); } /* Hold slide 9 */
+    100% { transform: translateX(0%); } /* Loop back */
+}
+
+
+/* Flickity Carousel (The_Team.html) Specific Adjustments */
+.carousel-section { /* Wrapper for Flickity carousel */
+    padding: 2em 0; /* Add some vertical spacing */
+    background-color: #f8f8f8; /* Optional: Light background to differentiate section */
+}
+
+.carousel { /* The direct container for .main-gallery */
+    max-width: 90%;
+    margin: 0 auto; /* Center it */
+    /* Flickity sets its own overflow and position properties. Avoid overriding these. */
+}
+
+/*
+   Flickity's .flickity-viewport and .flickity-slider should generally
+   not be styled directly with layout properties like display:flex/grid,
+   or width/height that conflict with Flickity's calculations.
+   flickity.css should handle this.
+*/
+
+.main-gallery.js-flickity {
+    /* Ensure it's not constrained by parent flex/grid in a way that breaks it */
+    /* If .carousel is a flex item, ensure .main-gallery can take its space */
+    width: 100%;
+    opacity: 0; /* Start hidden, Flickity makes it visible */
+    transition: opacity 0.5s;
+}
+.main-gallery.js-flickity.flickity-enabled {
+    opacity: 1;
+}
+
+
+.gallery-cell {
+    width: 66%; /* Show 1.5 cells roughly */
+    /* For The_Team.html, the images aslider_*.png are tall.
+       Let's try to make the cell height adapt to the image. */
+    height: auto; /* Let Flickity determine or image content */
+    margin-right: 15px;
+    /* background: #eee; Optional for debugging cell boundaries */
+    /* overflow: hidden; This might be good if images are different aspect ratios */
+}
+
+.carousel-slide-images {
+    width: 100%;
+    height: auto; /* Let the image's aspect ratio define height */
+    max-height: 70vh; /* Prevent extremely tall images from dominating */
+    object-fit: contain; /* 'contain' is good for showing the whole image */
+                         /* 'cover' would fill the cell, cropping if necessary */
+    display: block; /* Remove any extra space below image */
+}
+
+/* Flickity Button Overrides (if needed, check in browser inspector) */
+/* Example:
+.flickity-prev-next-button {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+.flickity-prev-next-button:hover {
+    background: white;
+}
+.flickity-page-dots .dot {
+    background: #555;
+}
+.flickity-page-dots .dot.is-selected {
+    background: teal;
+}
+*/
