@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RTW Articles</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+  <div class="banner3">
+    <img src="Images/Screen Shot 2021-09-04 at 3.00.20 PM.png" class="Logo"></img>
+      <div class="Bigbar">
+          <a href="index.html" class="topbar_hyperlinks">Home</a>
+          <a href="The_Team.html" class="topbar_hyperlinks">The Team</a>
+          <a href="Products.html" class="topbar_hyperlinks">Products</a>
+          <a href="contacts.html" class="topbar_hyperlinks">Contacts</a>
+          <a href="events.html" class="topbar_hyperlinks">Events</a>
+          <a href="articles.html" class="topbar_hyperlinks">Articles</a>
+          <a href="donate.html" class="topbar_hyperlinks">Donate</a>
+      </div>
+
+        <div class="contents">
+          <div class="padding">
+              <div class="subtitle">Plastic Bottles Can Now Be Turned Into Vanilla</div>
+              <div class="line"></div>
+              <div class="definition">Vidisha Jallapuram</div>
+              
+              <div class="product_description">
+                  Did you know? The smell of vanilla is known to directly impact the brain and induce calmness. It’s one
+                one of the most common household ingredients and is also used in perfume manufacture, and hygiene and
+                beauty products because of its many effects on the hair and skin. According to the Independent, the
+                market for the chemical is said to reach $724 million by 2025. Recently, scientists at the University of
+                Edinburgh have discovered a way to turn plastic waste into the infamous chemical flavor compound,
+                vanillin! Vanillin is the main chemical compound of the extract of the vanilla bean. Today it is mainly
+                used as a flavouring agent in many things, for perfumes and fragrances in both cleaning products and
+                candles, in medicines to mask nasty odours or tastes or in sweet foods such as ice cream and chocolate.
+              </div>
+
+                <div class="product_description"> According to the Food and Agriculture Organization of the United Nations, about 8.3 billion tonnes of
+                  plastic has been produced since the 1950s, and only 9% of it has been recycled. Out of all, the biggest
+                  contributor to this pollution problem is single use plastic. Single use plastic is produced and designed to
+                  be thrown away after being used only once. For example, water bottles, bags or takeaway boxes. A full
+                  32% of the 78 million tons of plastic packaging produced annually is left to flow into our oceans; the
+                  equivalent of pouring one garbage truck of plastic into the ocean every minute. What do these plastic
+                  products have in common? Polyethylene terephthalate(PET). PET is a thermoplastic polymer and is
+                  heavily used in manufacturing containers for food or liquid like water bottles or skincare product
+                  containers.</div>
+                
+                <div class="product_description"> The scientists at Edinburgh utilized past research where they figured out how to use enzymes to break
+                  PET down into terephthalic acid (TA). They then took the TA and used an engineered version of the
+                  common bacteria E. coli bacteria to transform TA into vanillin. In a statement given by Dr. Ellis Crawford
+                  of the Royal Society of Chemistry, he says, ‘‘Using microbes to turn waste plastics, which are harmful to
+                  the environment, into an important commodity and platform molecule with broad applications in
+                  cosmetics and food is a beautiful demonstration of green chemistry.’’ Given that vanilla is such a highly
+                  desirable chemical, this new discovery is an incredible advancement and part of big developments that
+                  could aid in achieving a circular economy. Although vanillin traditionally comes from the extract of
+                  vanilla beans, today around 99% of the substance is produced synthetically with petrochemicals, similar
+                  to the way these scientists at Edinburgh have processed their vanillin. The researchers stated that the
+                  plastic-derived vanilla should be safe to eat, but more tests are needed before it ends up in stores.
+                  </div>
+                
+                
+          </div>
+      </div>
+
+        <div class="footer">
+            <a href="index.html" class="footer_hyperlinks">Home</a>
+            <a href="ourmission.html" class="footer_hyperlinks">Our Mission</a>
+            <a href="The_Team.html" class="footer_hyperlinks">The Team</a>
+            <a href="contacts.html" class="footer_hyperlinks">Contacts</a>
+            <a href="events.html" class="footer_hyperlinks">Events</a>
+            <a href="articles.html" class="footer_hyperlinks">Articles</a>
+            <a href="https://www.instagram.com/repairthewaves/">
+              <img src="Images/logo_instagram.png" class = "logo"></img>
+            </a>
+            <a href="https://www.facebook.com/Repair-The-Waves-106512461679763">
+              <img src="Images/logo_facebook.png" class = "logo"></img>
+            </a>
+            <img src="Images/Screen Shot 2021-09-04 at 3.00.20 PM.png" class = "logo"></a>
+          </div>
+      
+          <div class="credits">
+            <div>@2021 Repair The Waves</div>
+            <div>Site designed by Repair The Waves technology team</div>
+          </div>
+    </div>
