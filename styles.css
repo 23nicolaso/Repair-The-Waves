@@ -636,26 +636,24 @@ article.padding section h2.definition, article.padding section h3.definition { /
 /* Updated keyframes for the 9-slide team CSS slider */
 @keyframes animate-team-slider {
     0% { transform: translateX(0%); }
-    10% { transform: translateX(0%); } /* Hold slide 1 */
-    11.11% { transform: translateX(-100%); } /* To slide 2 */
-    21.11% { transform: translateX(-100%); } /* Hold slide 2 */
-    22.22% { transform: translateX(-200%); } /* To slide 3 */
-    32.22% { transform: translateX(-200%); } /* Hold slide 3 */
-    33.33% { transform: translateX(-300%); } /* To slide 4 */
-    43.33% { transform: translateX(-300%); } /* Hold slide 4 */
-    44.44% { transform: translateX(-400%); } /* To slide 5 */
-    54.44% { transform: translateX(-400%); } /* Hold slide 5 */
-    55.55% { transform: translateX(-500%); } /* To slide 6 */
-    65.55% { transform: translateX(-500%); } /* Hold slide 6 */
-    66.66% { transform: translateX(-600%); } /* To slide 7 */
-    76.66% { transform: translateX(-600%); } /* Hold slide 7 */
-    77.77% { transform: translateX(-700%); } /* To slide 8 */
-    87.77% { transform: translateX(-700%); } /* Hold slide 8 */
-    88.88% { transform: translateX(-800%); } /* To slide 9 */
-    98.88% { transform: translateX(-800%); } /* Hold slide 9 */
-    100% { transform: translateX(0%); } /* Loop back */
+    11.11% { transform: translateX(0%); }
+    12.5% { transform: translateX(-100%); }
+    22.22% { transform: translateX(-100%); }
+    23.61% { transform: translateX(-200%); }
+    33.33% { transform: translateX(-200%); }
+    34.72% { transform: translateX(-300%); }
+    44.44% { transform: translateX(-300%); }
+    45.83% { transform: translateX(-400%); }
+    55.55% { transform: translateX(-400%); }
+    56.94% { transform: translateX(-500%); }
+    66.66% { transform: translateX(-500%); }
+    68.05% { transform: translateX(-600%); }
+    77.77% { transform: translateX(-600%); }
+    79.16% { transform: translateX(-700%); }
+    88.88% { transform: translateX(-700%); }
+    90.27% { transform: translateX(-800%); }
+    100% { transform: translateX(-800%); }
 }
-
 
 /* Flickity Carousel (The_Team.html) Specific Adjustments */
 .carousel-section { /* Wrapper for Flickity carousel */
@@ -664,7 +662,7 @@ article.padding section h2.definition, article.padding section h3.definition { /
 }
 
 .carousel { /* The direct container for .main-gallery */
-    max-width: 90%;
+    max-width: 50%;
     margin: 0 auto; /* Center it */
     /* Flickity sets its own overflow and position properties. Avoid overriding these. */
 }
@@ -723,3 +721,70 @@ article.padding section h2.definition, article.padding section h3.definition { /
     background: teal;
 }
 */
+
+.team-details-slider-section {
+    padding: 2em 0;
+    background: #f8f8f8;
+  }
+  
+  .team-details-flickity {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .team-details-flickity .gallery-cell {
+    width: 100%; /* Show one at a time */
+    margin-right: 10px;
+  }
+  
+  .team-details-flickity img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+/* Plastic Facts Gallery */
+.plastic-facts-gallery {
+    width: 100%;
+    background: #f8f8f8;
+    padding: 2em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plastic-facts-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90%;
+    margin: 0 auto;
+}
+.plastic-facts-images img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: white;
+    padding: 0.5em;
+    transition: transform 0.2s;
+}
+.plastic-facts-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+    .plastic-facts-images {
+        gap: 0.5em;
+    }
+    .plastic-facts-images img {
+        max-width: 70px;
+        padding: 0.2em;
+    }
+}
